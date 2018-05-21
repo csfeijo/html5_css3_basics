@@ -1,0 +1,104 @@
+/* CSS da Pet Shop - estilos.css */
+body {
+	background: url(../img/bg-pet-2.jpg);
+	padding: 0;
+	margin: 0;
+	font-family: "Trebuchet MS", Verdana, Arial;
+}
+header {
+	height: 140px;
+	background: #000000;
+}
+#logotipo {
+	/*border: 1px solid #ff0000;*/
+	width: 996px;
+	height: 98px;
+	margin: 0 auto;
+}
+#logotipo a {
+	display: block;
+	float: left;
+	margin-top: 4px;
+	margin-left: 12px;
+	width: 68px;
+	height: 91px;
+	background: url(../img/logo-pet.png);
+}
+#logotipo a:hover {
+	background: url(../img/logo-pet-hover.png);
+}
+#logotipo h1 {
+	color: #ffffff;
+	font-size: 42px;
+	float: left;
+	margin: 24px 0 0 20px;
+}
+header nav {
+	/*border: 1px solid #ffff00;*/
+	width: 996px;
+	margin: 0 auto;
+}
+.menu {
+	border-bottom: 4px solid red;
+	color: #ffffff;
+	font-size: 22px;
+	width: 180px;
+	display: inline-block;
+	padding: 4px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase; /* lowercase, capitalize */
+}
+.menu#home {
+	border-bottom: 4px solid #fad100;
+}
+.menu#home:hover {
+	background: #fad100;
+}
+.menu#produtos {
+	border-bottom: 4px solid #9faa00;
+}
+.menu#produtos:hover {
+	background: #9faa00;
+}
+.menu#galeria {
+	border-bottom: 4px solid #71d400;
+}
+.menu#galeria:hover {
+	background: #71d400;
+}
+.menu#servicos {
+	border-bottom: 4px solid #fd9a05;
+}
+.menu#servicos:hover {
+	background: #fd9a05;
+}
+.menu#contato {
+	border-bottom: 4px solid #cd1fce;
+}
+.menu#contato:hover {
+	background: #cd1fce;
+}
+/* PSEUDO-propriedades */
+.menu:first-child {
+	margin-left: 18px;
+}
+
+/* footer - rodape */
+footer {
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+	
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 14px;
+}
+
+/* clearfix - "pedra no fundo" */
+.clear {
+	clear: both;
+}
+
+

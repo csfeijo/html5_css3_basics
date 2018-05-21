@@ -1,0 +1,63 @@
+<!--
+    transition-property*,
+    transition-duration*,
+    transition-timing-function
+    transition-delay.
+
+    transform: skewX
+-->    
+
+<style>
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+#tr1 {
+    transform: translate(130px, 10px); /* vai fazer x e y */
+}
+#tr2 {
+    transform: translate(130px); /* vai fazer só no x */
+}
+#tr3 {
+    transform: translateX(130px);  /* vai fazer só no x */
+}
+#tr4 {
+    transform: translateY(130px);  /* vai fazer só no y */
+}
+
+#tr5 {
+    transform: skewX(30deg);
+}
+#tr6 {
+    transform: skewY(30deg);
+}
+
+#tr7 {
+    transform: rotate(30deg);
+}
+#tr8 {
+    transform: rotate(0.5turn);
+}
+
+#tr9 {
+    transform: scale(2); /* dobra o tamanho total */
+    
+    transform: scale(2, 3); /* altura e largura */
+    transform: scaleX(2);
+    transform: scaleY(2);
+}
+</style>
+
+<div id="tr1">transformation 1</div>
+<div id="tr2">transformation 2</div>
+<div id="tr3">transformation 3</div>
+<div id="tr4">transformation 4</div>
+
+<div id="tr5">transformation 5</div>
+<div id="tr6">transformation 6</div>
+
+<div id="tr7">transformation 7</div>
+<div id="tr8">transformation 8</div>
+
+<div id="tr9">transformation 9</div>

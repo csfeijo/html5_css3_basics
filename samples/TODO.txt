@@ -1,0 +1,7 @@
+- CSS Gradients
+- CSS 3 Animations
+    - CSS3 Radio (http://bernarddeluna.github.io/oldRadio/)
+    - Simpsons CSS (https://pattle.github.io/simpsons-in-css/)
+- @font-face
+    - Google Fonts
+- HTML5 + Audio / Video
