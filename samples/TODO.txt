@@ -4,4 +4,40 @@
     - Simpsons CSS (https://pattle.github.io/simpsons-in-css/)
 - @font-face
     - Google Fonts
-- HTML5 + Audio / Video
+
+JavaScript:
+- vars
+- tipos de dados
+    - inteiro
+    - string
+    - boolean
+    - decimal
+    - null
+    - objetos
+    - vetores
+- operadores
+    - adição
+    - subtração
+    - multiplicação
+    - divisão
+- comparadores lógicos
+    - >
+    - >=
+    - <
+    - <=
+    - ==
+    - ===
+    - !==
+    - !===
+    - and (&&)
+    - or  (||)
+    - not (!)
+- estruturas condicionais
+    - IF
+    - Ternários
+    - SWITCH
+- estrutura de repatição
+    - do / while
+    - for
+    - forEach
+- DOM
