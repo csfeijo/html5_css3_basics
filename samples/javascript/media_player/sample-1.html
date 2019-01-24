@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Audio Media Player</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+
+<div class="conteudo">
+  <div class="album">
+    <div class="lp">
+      <div class="miolo">
+        <div class="furo"></div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="player">
+    <source src="media/led.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="controls">
+    <button type="button" id="play">PLAY</button>
+    <button type="button" id="pause">PAUSE</button>
+    
+    <p>Volume:</p>
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+    
+    <p>Track:</p>
+    <input type="range" id="track" min="0" max="1" step="0.1" value="1">
+  </div>
+</div>
+
+
+  <script src="js/sample.js"></script>
+</body>
+</html>
