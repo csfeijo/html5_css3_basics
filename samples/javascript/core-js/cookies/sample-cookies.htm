@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Cookies</title>
+    <link rel="stylesheet" href="css/ui-cookies.css">
+  </head>
+<body>
+
+<h3>Preencha seus dados:</h3>
+<form>
+  <input type="text" id="nome" name="nome" placeholder="Qual o seu nome?">
+  <input type="text" id="idade" name="idade" placeholder="Idade?" maxlength="2">
+  <button type="button" id="salvar">Salvar em cookie</button>  
+</form>
+
+<hr>
+
+<div id="resultado" class=""></div>
+
+<script>
+function salva_dados() {
+  var nome = document.querySelectorAll('#nome')[0].value;
+  var idade = document.querySelectorAll('#idade')[0].value;
+
+  document.cookie = 'nome=' + nome + ';idade='+ idade + '; expires=Thu, 18 Dec ' + (new Date().getFullYear() + 1) + ' 12:00:00 UTC';
+
+  document.querySelectorAll('#resultado')[0].innerHTML = 'Dados Salvos com sucesso!';
+  
+  console.log(window.document.cookie);
+}
+
+function verifica_dados () {
+  if (document.cookie.indexOf('nome=') != -1) {
+    var dados = document.cookie;
+    var nome  = dados.split('nome=');
+
+    document.querySelectorAll('#resultado')[0].innerHTML = dados;
+  }
+}
+
+
+document.querySelectorAll('#salvar')[0].onclick = salva_dados;
+
+
+</script>
+  
+</body>
+</html>

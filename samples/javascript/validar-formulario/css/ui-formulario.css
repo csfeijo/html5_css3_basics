@@ -1,0 +1,10 @@
+input, button {
+  padding: 8px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+}
+
+input.erro {
+  border: 2px solid red;
+  transition: border 1s;
+}

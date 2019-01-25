@@ -56,8 +56,9 @@
   outline: none;
   margin-top: 40px;
 }
+.controls button[type=button].active,
 .controls button[type=button]:active {
-  background:#f3f3f3;
+  background:#dddddd;
 }
 
 

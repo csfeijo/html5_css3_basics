@@ -9,15 +9,30 @@ function troca_miolo(tipo) {
   }
 }
 
+function ativa_botao (tipo) {
+  var play = document.querySelectorAll('#play')[0];
+  var pause = document.querySelectorAll('#pause')[0];
+
+  if (tipo == 'play') {
+    pause.classList.remove('active');
+    play.classList.add('active');
+  } else {
+    play.classList.remove('active');
+    pause.classList.add('active');
+  }
+}
+
 var player = document.querySelectorAll('#player')[0];
 
 function play() {
   troca_miolo('play');
+  ativa_botao('play');
   player.play();
 }
 
 function pause() {
   troca_miolo('pause');
+  ativa_botao('pause');
   player.pause();
 }
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Formulario</title>
+    <link rel="stylesheet" href="css/ui-formulario.css">
+  </head>
+<body>
+
+<h3>Preencha seus dados:</h3>
+<form id="formulario" action="resposta.htm">
+  <input type="text" id="nome" name="nome" placeholder="Qual o seu nome?">
+
+  <h4 id="feedback"></h4>
+
+  <button type="submit" id="enviar">Enviar</button>  
+</form>
+
+<hr>
+
+<div id="resultado" class=""></div>
+
+<script>
+function valida_form(){
+  var nome = document.querySelectorAll('#nome')[0];
+  var feedback = document.querySelectorAll('#feedback')[0];
+
+  // sempre que validar, por segurança remove as classes de erro dos formularios
+  nome.classList.remove('erro');
+
+  if (nome.value === '') {
+    nome.classList.add('erro');
+    nome.focus();
+    feedback.innerHTML = 'Preencha o nome!';
+
+    // se este caso ocorreu, então barra o envio do formulario com o return false
+    return false;
+  }
+
+  // se tudo der certo permite o envio do form
+  return true;
+};
+
+
+// carrega o formulario e atribui a função de validação
+var form = document.querySelectorAll('#formulario')[0];
+form.onsubmit = valida_form;
+
+
+
+</script>
+
+
+
+</body>
+</html>

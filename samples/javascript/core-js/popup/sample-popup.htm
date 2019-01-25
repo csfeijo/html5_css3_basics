@@ -1,0 +1,10 @@
+<button type="button" id="btn-1">Janela</button>
+
+<script>
+
+function abre_janela(){
+  var janela = window.open('', 'myWindow', 'width=400,height=400,top=500,left=500');
+  janela.document.write("<p>Este conteudo foi inserido na janela via JS!</p>");
+}
+document.querySelectorAll('#btn-1')[0].onclick = abre_janela;
+</script>

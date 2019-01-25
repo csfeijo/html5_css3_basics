@@ -1,0 +1,20 @@
+/* colocando a fonte de relogio digital no html */
+@font-face {
+  font-family: Digital;
+  src: url(../fontes/digital-7.ttf);
+}
+
+div {
+  border: 5px solid black;
+  box-shadow: inset 0px -2px 15px 0px grey;
+  padding-top: 4px;
+  width: 300px;
+  height: 70px;
+  margin: 100px auto;
+  font-size: 72px;
+  font-family: Digital;
+  text-align: center;
+  background: #000000;
+  color: darkred;
+  zoom: 2;
+}

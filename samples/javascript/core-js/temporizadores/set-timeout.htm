@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Temporizadores</title>
+    <link rel="stylesheet" href="css/set-timeout.css">
+  </head>
+<body>
+
+<button id="atualiza" type="button">Atualiza em 2 segundos</button>
+
+<hr>
+
+<div id="resultado" class=""></div>
+
+<script>
+function atualiza_dados() {
+  window.setTimeout(function(){
+    var elem = document.querySelectorAll('#resultado')[0];
+    elem.innerHTML = 'atualizou';
+  }, 2000);
+}
+
+document.querySelectorAll('#atualiza')[0].onclick = atualiza_dados;
+</script>
+  
+</body>
+</html>

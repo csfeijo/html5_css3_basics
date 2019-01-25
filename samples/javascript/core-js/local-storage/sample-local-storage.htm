@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Local Storage</title>
+    <link rel="stylesheet" href="css/ui-storage.css">
+  </head>
+<body>
+
+<h3>Preencha seus dados:</h3>
+<form>
+  <input type="text" id="nome" name="nome" placeholder="Qual o seu nome?">
+  <button type="button" id="salvar">Salvar em Local Storage</button>  
+</form>
+
+<hr>
+
+<div id="resultado" class=""></div>
+
+<script>
+function salvar_dados(){
+  var nome = document.querySelectorAll('#nome')[0].value;
+
+  window.localStorage.setItem('dados_formulario', nome);
+
+  document.querySelectorAll('#resultado')[0].innerHTML = 'Dados salvos com sucesso!';
+}
+
+function carregar_dados() {
+  var dados = window.localStorage.getItem('dados_formulario');
+
+  if (dados) {
+    var resposta = '<p>Dados carregados com sucesso!</p>Seu nome é: ' + dados;
+    document.querySelectorAll('#resultado')[0].innerHTML = resposta;
+  }
+}
+
+var salvar = document.querySelectorAll('#salvar')[0];
+salvar.onclick = salvar_dados;
+
+
+carregar_dados();
+</script>
+
+
+
+</body>
+</html>

@@ -41,3 +41,17 @@ JavaScript:
     - for
     - forEach
 - DOM
+    - window
+    - document
+        - getElementById
+        - getElementsByClassName
+        - getElementsByTagName
+        - querySelectors
+    - pop
+    - temporizadores
+    - cookies
+    - localStorage
+
+- EXTRA
+    - Visual Studio Code
+    - emmet syntax
