@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.slap {
+  background: url(../img/user.png) no-repeat;
+  transition: background-position 0.2s;
+}
+
+.slap:hover {
+  background-position: -30px;
+  transition: background-position 0.2s;
+}
+
+.wave {
+  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+  transition: background 2s;
+}
+
+.wave:hover {
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  transition: background-image 2s;
+}

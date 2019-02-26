@@ -1,0 +1,23 @@
+.base {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: 80px auto;
+}
+
+.pulse {
+  animation: pulse-white 2s infinite;
+}
+
+@keyframes pulse-white {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 149, 214, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 60px rgba(0, 149, 214, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 149, 214, 0);
+  }
+}
