@@ -1,0 +1,55 @@
+body { 
+  padding: 60px;  
+  font-family: 'Trebuchet MS';
+}
+
+.card {
+  display: flex;
+  width: 100px;
+  height: 160px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.back,
+.front {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.back {
+  background: orange;
+  display: none;
+}
+.front {
+  background: red;
+}
+
+
+#card-ola-1:checked ~.card-ola-1 .front {
+  display: none;
+}
+#card-ola-1:checked ~.card-ola-1 .back {
+  display: flex;
+}
+
+#card-ola-2:checked ~.card-ola-2 .front {
+  display: none;
+}
+#card-ola-2:checked ~.card-ola-2 .back {
+  display: flex;
+}
+/* condicional && */
+#card-ola-1:checked + #card-ola-2:checked ~.card-ola-1 .back,
+#card-ola-1:checked + #card-ola-2:checked ~.card-ola-2 .back {
+  background: blue !important;
+}
