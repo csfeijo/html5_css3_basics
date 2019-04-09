@@ -1,6 +1,29 @@
+YOUTUBE:
+Pai ensinando filhos Lógica de Programação:
+https://www.youtube.com/watch?v=pdhqwbUWf4U
+
+HTML:
+
+The Way Back Machine:
+https://archive.org/web/
+
+Lorem Ipsum:
+https://www.lipsum.com/
+
+Mussum Ipsum:
+http://mussumipsum.com/
 
 
 
+CSS:
+CSS Zen Garden:
+http://www.csszengarden.com/
+
+Old CSS Radio
+https://github.com/bernarddeluna/oldRadio
+
+The Simpsons in CSS 3
+https://pattle.github.io/simpsons-in-css/
 
 CSS 3 - Gradients Samples
 https://webgradients.com/
