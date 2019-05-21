@@ -1,0 +1,40 @@
+/* APENAS LAYOUT */
+body {
+  font-family: 'Trebuchet MS';
+  margin-bottom: 100px;
+}
+nav {
+  padding-top: 20px; 
+}
+nav a {
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #999999;
+  border-radius: 6px;
+  color: white;
+  background: #0096d6;
+  text-decoration: none;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.topo {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  background: #999999 url(../img/top-icon.png) no-repeat center;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+
+
+/* O SEGREDO SOBRE O BEHAVIOR - não funciona em qualquer browser ! */
+html {
+  scroll-behavior: smooth;
+}
