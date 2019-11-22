@@ -1,0 +1,23 @@
+#player {
+  width: 80px;
+  height: 80px;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../img/pacman.gif) no-repeat;
+  background-size: 100%;
+}
+
+
+.para-baixo {
+  transform: rotate(90deg);
+}
+
+.para-cima {
+  transform: rotate(-90deg);
+}
+
+.para-direita {
+  transform: rotate(-180deg);
+}
