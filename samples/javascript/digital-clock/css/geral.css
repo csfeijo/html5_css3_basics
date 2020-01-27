@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.watch {
+    color: red;
+    font-size: 100px;
+    width: 300px;
+    padding: 40px;
+    margin: 60px auto;
+    font-family: Digital;
+    border: 2px solid red;
+
+}

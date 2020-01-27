@@ -1,0 +1,5 @@
+@font-face {
+	font-family: 'Digital';
+	src: url('../fonts/Digital.eot');
+	src: local('Digital'), url('../fonts/Digital.woff') format('woff'), url('../fonts/Digital.ttf') format('truetype');
+}
