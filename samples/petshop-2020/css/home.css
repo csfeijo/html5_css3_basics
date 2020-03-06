@@ -1,0 +1,19 @@
+/*
+azul:    #00427a
+amarelo: #ffc20e
+laranja: #ff9401
+*/
+
+.home {
+  background: #00427a;
+  border-radius: 6px;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 24px;
+
+
+  width: 90%;
+  max-width: 800px;
+  
+}

@@ -1,16 +1,19 @@
+/*
+azul:    #00427a
+amarelo: #ffc20e
+laranja: #ff9401
+*/
+
 body {
   padding: 0;
   margin: 0;
-  background: #ccc;
   font-family: Arial;
 }
 
 header {
-  background: #0096d6;
+  background: #00427a;
   color: white;
   width: 100%;
-
-
 }
 
 .container {
@@ -22,6 +25,7 @@ header {
   font-size: 44px;
   display: inline-block;
   margin: 10px;
+  color: #ffc20e;
 }
 
 .menu {
@@ -38,9 +42,10 @@ header {
 }
 
 .menu a:hover {
-  background: white;
-  color: #0096d6;
+  background: #ffc20e;
 }
+
+/* BURGER MENU */
 
 a.burger {
   width: 30px;
@@ -59,10 +64,18 @@ a.burger div {
   margin: 7px 0;
 }
 
-.menu .menu-items a {
-  /* transition: width 2s; */
+
+/* HELPERS */
+.show { display: block !important; transition: display 1s; }
+.hide { display: none !important; }
+
+.centraliza {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0; /* adicionar o Z-INDEX 1 no HEADER e POSITION: relative; */
 }
 
 
-.show { display: block !important; transition: display 1s; }
-.hide { display: none !important; }

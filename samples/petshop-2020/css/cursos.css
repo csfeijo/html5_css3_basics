@@ -1,0 +1,73 @@
+/*
+azul:    #00427a
+amarelo: #ffc20e
+laranja: #ff9401
+*/
+
+.cursos {
+  background: #00427a;
+  border-radius: 6px;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 24px;
+
+  width: 90%;
+  max-width: 800px;
+
+  text-align: center;
+}
+
+.curso {
+  width: 120px;
+  height: 120px;
+  border: 1px solid white;
+  border-radius: 6px;
+  margin: 0 10px;
+
+  /* ALINHAMENTO */
+  display: inline-block;
+
+  /* GENERICO PARA OS BG´S */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+
+  transition: background 0.5s;
+}
+
+.curso.pps {
+  background-image: url(../img/ico-pps.png);
+}
+.curso.pps:hover {
+  background-color: #00649c;
+}
+
+
+.curso.js {
+  background-image: url(../img/ico-js.png);
+}
+.curso.js:hover {
+  background-color: #ffc20e;
+}
+
+.curso.java {
+  background-image: url(../img/ico-java.png);
+}
+.curso.java:hover {
+  background-color: #941d1d;
+}
+
+.curso.oracle {
+  background-image: url(../img/ico-oracle.png);
+}
+.curso.oracle:hover {
+  background-color: #d02023;
+}
+
+.curso.dev-ops {
+  background-image: url(../img/ico-dev-ops.png);
+}
+.curso.dev-ops:hover {
+  background-color: #24b8eb;
+}

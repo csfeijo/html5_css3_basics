@@ -1,4 +1,9 @@
 @media screen and (max-width: 967px) {
+  header {
+    z-index: 9;
+    position: relative;
+  }
+
   .container {
     width: 100%;
   }
@@ -8,8 +13,10 @@
     font-size: 34px;
     transition: font-size 0.5s;
 
-    /* calculo de 80px devido a largura do burger + as margins do H1*/
-    width: calc(100% - 80px);
+    /* centralizando o título sempre */
+    /* calculo de 80px devido a largura do burger + as margins do H1 + 40px do padding */
+    width: calc(100% - 120px);
+    padding-left: 40px;
   }
   
   a.burger {
@@ -21,8 +28,6 @@
     margin: 7px auto;
   }
 
-
-
   .menu {
     display: none;
   }
@@ -30,6 +35,20 @@
   .menu .menu-items a{
     display: block;
     width: 100%;
+    border-bottom: 1px dotted white;
+
+
+    padding-right: 0;
+    padding-left: 0;
+    
   }
+
+
+  /* HOME */
+  .home {
+    font-size: 12px;
+  }
+
+
 
 }
