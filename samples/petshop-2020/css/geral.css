@@ -1,3 +1,4 @@
+@import 'fontes.css';
 /*
 azul:    #00427a
 amarelo: #ffc20e
@@ -7,13 +8,16 @@ laranja: #ff9401
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial;
+  font-family: 'Roboto Regular';
+  background: url(../img/background-1.jpg) repeat-x;
+  background-position: 0 110px;
 }
 
 header {
   background: #00427a;
   color: white;
   width: 100%;
+  border-bottom: 1px solid white;
 }
 
 .container {
@@ -41,8 +45,10 @@ header {
   text-decoration: none;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a.ativo {
   background: #ffc20e;
+  color: #00427a;
 }
 
 /* BURGER MENU */

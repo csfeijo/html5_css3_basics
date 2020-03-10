@@ -9,11 +9,11 @@ laranja: #ff9401
   border-radius: 6px;
   color: white;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   line-height: 24px;
 
   width: 90%;
-  max-width: 800px;
+  max-width: 740px;
 
   text-align: center;
 }
@@ -23,7 +23,7 @@ laranja: #ff9401
   height: 120px;
   border: 1px solid white;
   border-radius: 6px;
-  margin: 0 10px;
+  margin: 10px;
 
   /* ALINHAMENTO */
   display: inline-block;
@@ -36,13 +36,16 @@ laranja: #ff9401
   transition: background 0.5s;
 }
 
+.curso:hover {
+  background-size: 75%;
+}
+
 .curso.pps {
   background-image: url(../img/ico-pps.png);
 }
 .curso.pps:hover {
   background-color: #00649c;
 }
-
 
 .curso.js {
   background-image: url(../img/ico-js.png);
@@ -71,3 +74,63 @@ laranja: #ff9401
 .curso.dev-ops:hover {
   background-color: #24b8eb;
 }
+
+.curso.dev-agil {
+  background-image: url(../img/ico-agil.png);
+}
+.curso.dev-agil:hover {
+  background-color: #1a429a;
+}
+
+.curso.dev-bots {
+  background-image: url(../img/ico-bots.png);
+}
+.curso.dev-bots:hover {
+  background-color: #4b89dc;
+}
+
+.curso.dev-bi {
+  background-image: url(../img/ico-bi.png);
+}
+.curso.dev-bi:hover {
+  background-color: #2c6b1f;
+}
+
+.curso.dev-marketing {
+  background-image: url(../img/ico-marketing.png);
+}
+.curso.dev-marketing:hover {
+  background-color: #f79e06;
+}
+
+.curso.dev-testes {
+  background-image: url(../img/ico-testes.png);
+}
+.curso.dev-testes:hover{
+  background-color: #049372;
+}
+
+.curso.dev-ds {
+  background-image: url(../img/ico-ds.png);
+}
+.curso.dev-ds:hover{
+  background-color: #049372;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
