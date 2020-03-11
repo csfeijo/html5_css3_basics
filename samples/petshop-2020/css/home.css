@@ -3,9 +3,8 @@ azul:    #00427a
 amarelo: #ffc20e
 laranja: #ff9401
 */
-
 .home {
-  background: #00427a;
+  background: var(--primaria-fraca);
   border-radius: 6px;
   color: white;
   margin: 0 auto;

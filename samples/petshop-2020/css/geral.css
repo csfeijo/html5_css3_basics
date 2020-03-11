@@ -4,6 +4,11 @@ azul:    #00427a
 amarelo: #ffc20e
 laranja: #ff9401
 */
+:root {
+  --primaria : #405752;
+  --primaria-fraca: #598177;
+  --secundaria : #ffc20e;
+}
 
 body {
   padding: 0;
@@ -14,7 +19,7 @@ body {
 }
 
 header {
-  background: #00427a;
+  background: var(--primaria);
   color: white;
   width: 100%;
   border-bottom: 1px solid white;
@@ -29,7 +34,7 @@ header {
   font-size: 44px;
   display: inline-block;
   margin: 10px;
-  color: #ffc20e;
+  color: var(--secundaria);
 }
 
 .menu {
@@ -47,8 +52,10 @@ header {
 
 .menu a:hover,
 .menu a.ativo {
-  background: #ffc20e;
-  color: #00427a;
+  background: var(--primaria-fraca);
+  color: var(--secundaria);
+
+  font-weight: bold;
 }
 
 /* BURGER MENU */
@@ -69,6 +76,21 @@ a.burger div {
   border-top: 1px solid white;
   margin: 7px 0;
 }
+
+
+/* FOOTER */
+footer {
+  background: var(--primaria);
+  color: var(--secundaria);
+  font-size: 12px;
+  text-align: center;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
 
 
 /* HELPERS */

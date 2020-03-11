@@ -1,4 +1,5 @@
-@media screen and (max-width: 967px) {
+
+@media screen and (max-width: 967px) and (orientation : portrait) {
   body {
     background-position: 0 60px;
   }
@@ -47,12 +48,34 @@
     
   }
 
+  /* FOOTER */
+  footer {
+    font-size: 10px;
+  }
 
   /* HOME */
   .home {
     font-size: 12px;
+    line-height: 16px;
+    width: 80%;
+    margin: 30px auto;
   }
 
-
-
+  /* CURSOS */
+  .curso {
+    width: 80px;
+    height: 80px;
+  }
 }
+
+/* @media screen and (max-width: 1920px) and (orientation : landscape)  {
+  .home {
+   font-size: 10px;
+   line-height: 16px;
+   width: 90%;
+   margin: 90px auto;
+ }
+}
+
+
+ */

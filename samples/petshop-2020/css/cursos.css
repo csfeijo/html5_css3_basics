@@ -5,7 +5,7 @@ laranja: #ff9401
 */
 
 .cursos {
-  background: #00427a;
+  background: var(--primaria-fraca);
   border-radius: 6px;
   color: white;
   margin: 0 auto;
