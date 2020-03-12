@@ -1,0 +1,23 @@
+/* galeria.css */
+section {
+    margin: 60px auto;
+    background: #ffffff;
+    width: 588px;
+    min-height: 300px;
+    border: 2px solid #4a8506;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px;
+}
+
+.miniaturas img {
+    width: 110px;
+    border: 1px solid #4a8506;
+    border-radius: 4px;
+    transition: transform 0.5s;
+}
+.miniaturas img:hover {
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 0.5s;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Roboto'), url('../fonts/Roboto.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'CatShop';
+	font-style: normal;
+	font-weight: normal;
+	src: local('CatShop'), url('../fonts/catshop.woff') format('woff');
+}

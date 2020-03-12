@@ -1,0 +1,16 @@
+/* home.css */
+section {
+    width: 700px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 60px auto;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 5px 5px 20px 6px rgba(205,205,205, 0.8);
+    /* X, Y, BLUR, SPREAD, COR */
+    text-shadow: 5px 5px 4px #999999;    
+}
+.destaque {
+    color: #ff0000;
+    font-weight: bold;
+}

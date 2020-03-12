@@ -1,0 +1,162 @@
+/* geral.css */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    background: url(../img/bg-pet-3.png) #436188;
+    font-family: 'Roboto';
+}
+header {
+    background: rgba(0, 0, 0, 0.8);
+    min-height: 130px;
+
+    /* FIX PARA O BURACO QUE FICA NA LATERAL QUANDO SCROLLA */
+    display: inline-table;
+    width: 100%;
+}
+.container {
+    width: 996px;
+    margin: 0 auto;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.container img, .container h1 {
+    float: left;
+}
+.container h1 {
+    font-family: CatShop;
+    text-transform: uppercase;
+    font-size: 44px;
+    margin: 14px 0 0 20px;
+
+    /* CHAMA A ANIMAÇÃO */
+    animation-name: neon;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/* CONFIGURACAO DO MENU */
+.menu {
+    clear: both; /* ACABA COM A BRIGA DO FLOAT */
+    padding-top: 10px;
+}
+.menu a {
+    color: #ffffff;
+    width: 321px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+    transition: background 2s;
+}
+
+/*
+    MONTAMOS O MENU
+    ENSINA SOBRE O FIRST-CHILD / LAST-CHILD
+    ENSINA SOBRE O HOVER
+    MOSTRA O RODAPÉ
+    MOSTRA O SESSION
+*/
+
+.menu a:hover {
+    transition: background 2s, color 2s;
+}
+.menu a:first-child  {
+    border-bottom: 4px solid #fad100;
+}
+.menu a:first-child:hover, .menu a:first-child.active {
+    background: #fad100;
+    color: #ffffff; 
+}
+.menu a:nth-child(2) {
+    border-bottom: 4px solid #4a8506;
+}
+.menu a:nth-child(2):hover, .menu a:nth-child(2).active {
+    background: #4a8506;
+    color: #ffffff; 
+}
+.menu a:last-child {
+    border-bottom: 4px solid #0066cc;
+}
+.menu a:last-child:hover, .menu a:last-child.active {
+    background: #0066cc;
+    color: #ffffff; 
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -4px 20px 0 #999999;
+
+    /* position: fixed;
+    bottom: 0; */
+    position: absolute;
+    bottom: 0;
+    padding: 8px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/* CENTRALIZADOR */
+.centralize {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* adicionar o Z-INDEX 1 no HEADER e POSITION: relative; */
+}
+
+/* ANIMAÇÃO NEON */
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 5px #7bacff,
+                     0 0 10px #7bacff,
+                     0 0 20px #7bacff,
+                     0 0 40px #7bacff,
+                     0 0 80px #7bacff,
+                     0 0 90px #7bacff,
+                     0 0 100px #7bacff,
+                     0 0 150px #7bacff;
+    }
+    50% {
+        text-shadow: 0 0 5px #7bffce,
+                     0 0 10px #7bffce,
+                     0 0 20px #7bffce,
+                     0 0 40px #7bffce,
+                     0 0 80px #7bffce,
+                     0 0 90px #7bffce,
+                     0 0 100px #7bffce,
+                     0 0 150px #7bffce;
+    } 
+    75% {
+        text-shadow: 0 0 5px #ff7bac,
+                     0 0 10px #ff7bac,
+                     0 0 20px #ff7bac,
+                     0 0 40px #ff7bac,
+                     0 0 80px #ff7bac,
+                     0 0 90px #ff7bac,
+                     0 0 100px #ff7bac,
+                     0 0 150px #ff7bac;
+    } 
+    100% {
+        text-shadow: 0 0 5px #7bacff,
+                     0 0 10px #7bacff,
+                     0 0 20px #7bacff,
+                     0 0 40px #7bacff,
+                     0 0 80px #7bacff,
+                     0 0 90px #7bacff,
+                     0 0 100px #7bacff,
+                     0 0 150px #7bacff;
+    }      
+}
+
