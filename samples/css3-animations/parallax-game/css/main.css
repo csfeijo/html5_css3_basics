@@ -1,0 +1,70 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* aqui é o que importa! */
+#canvas {
+  border: 6px solid #0096D6;
+  width: 400px;
+  height: 220px;
+  margin: 0 auto 20PX auto;
+
+  background: url(../img/bg-1.png);
+  background-size: 100%;
+
+  /* configura e chama a animacao */
+  animation-name: scroll-bg;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes scroll-bg {
+  to {
+    background-position: 1200px 0;
+  }
+}
+
+#passaro {
+  background: url(../img/passaro.gif);
+  width: 50px;
+  height: 45px;
+  background-size: 100%;
+  float: right;
+
+  /* configura e chama a animacao */
+  animation-name: voa;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes voa {
+  25% {
+    margin-right: 60px;
+  }
+  50% {
+    margin-top: 140px;
+    margin-right: 60px;
+  }
+  75% {
+    margin-top: 100px;
+    margin-right: 200px;
+  }
+  100% {
+    margin-top: 90px;
+    margin-right: 300px;
+  }
+}
+
