@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: #ff005c;
+    }
+
+    .button {
+      margin: 100px auto;
+      cursor: pointer;
+      width: 300px;
+      height: 140px;
+      border-radius: 1000px;
+      background: linear-gradient(#4b4b4b, #111111);
+      box-shadow: 35px 0 4px #171717 inset, -35px 0 5px #494949 inset;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .off {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #c76f72;
+      border-radius: 50%;
+    }
+
+    .on {
+      width: 40px;
+      height: 40px;
+      color: white;
+      border-right: 2px solid #9c9c9c;
+    }
+
+    .button:active {
+      box-shadow: 35px 0 4px #494949 inset, -35px 0 5px #171717 inset;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <div class="button">
+    <div class="off"></div>
+    <div class="on"></div>
+  </div>
+
+</body>
+
+</html>
